@@ -1,0 +1,5 @@
+When /^I want to add/ do
+    fill_in 'a', :with => 100
+    fill_in 'b', :with => 100
+    click_button 'Add'
+end
