@@ -7,9 +7,9 @@ And I provide valid userid and password
 When I click on login button
 Then I should be able to login inside the Youse
 
-Scenario2: Login with valid userid an password no registry
+Scenario2: Login with valid userid and password no registry
 Given should be at the login page
-And I provide on valid userid an password no value
+And I provide on valid userid and password no value
 When I click on login button
 Then I should be uneable 
 And The title: "Invalid email or password." of web page should be Youse Main page
