@@ -1,15 +1,28 @@
-Feature: Registry 
- To test @Registry page of Youse web site
+Feature: Registration
+To test the @Registry page of the Youse website
 
-Scenario1: @Registry with valid email userid
-Guiven I should be at the Registry User page
-And I provide valid userid and E-mail
-When I click on Next step  button Or Get in with facebook count
-Then I should be able to Registro inside the Youse
-And The title of web page should be Youse Main page
+Scenario1: @Registry with valid email user ID
+Guiven Should be on the user registration page
+And I provide valid user ID and email
+When I click on the button in the next step or I take into account with Facebook
+Then you should be able to Register inside the Youse
+And The title: "Satisfactory registration" of the website must be Youse Home
 
-Scenario2: @Facebook_Acount valid userid
-Guiven I should be at the registry User page
+Scenario2: @Registry with invalid email user ID
+Guiven Should be on the user registration page
+And I provide valid user ID and email
+When I click on the button in the next step or I take into account with Facebook
+Then you should be able to Register inside the Youse
+And The title: "Invalid Registration" of the website must be Youse Home
+
+Scenario3: @Facebook_Acount Valid User ID
+Guiven Should be on record User page
 When I click on Get in with facebook count
-Then I should be able to Registro inside the Youse
-And The title of wen page should be Youse Main page
+Then you should be able to Register inside the Youse
+And The title: "Valid registration" of the page wen must be Youse Home
+
+Scenario4: @Facebook_Acount Invalid user ID
+Guiven Should be on record User page
+When I click on Get in with facebook count
+Then you should be able to Register inside the Youse
+Y The title: "Invalid accumulation" of the page wen must be Youse Home
