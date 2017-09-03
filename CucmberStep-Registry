@@ -1,0 +1,15 @@
+Feature: Registry 
+ To test @Registry page of Youse web site
+
+Scenario1: @Registry with valid email userid
+Guiven I should be at the Registry User page
+And I provide valid userid and E-mail
+When I click on Next step  button Or Get in with facebook count
+Then I should be able to Registro inside the Youse
+And The title of web page should be Youse Main page
+
+Scenario2: @Facebook_Acount valid userid
+Guiven I should be at the registry User page
+When I click on Get in with facebook count
+Then I should be able to Registro inside the Youse
+And The title of wen page should be Youse Main page
