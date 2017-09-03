@@ -1,0 +1,36 @@
+Ruggedization Framework For Security Testing: Gauntlt
+ Login Double Factor Authentication
+
+# my.attack
+Feature: Description for all scenarios in this file
+  Scenario: Description of this scenario
+    Given ...
+    When ...
+    Then ...
+
+  Scenario: ...
+    Given ...
+    When ...
+    Then ...
+
+
+Feature: Attack with kindness
+
+  Scenario: Ensure I am not mean
+    # verify a given attack adapter is installed
+    # HIGHLY RECOMMENDED to catch installation/configuration problems
+    Given "kindness" is installed
+
+    # Execute the attack
+    When I launch a "kindness" attack with:
+      """
+      whoami  # EXACT commands to be executed on the command line
+      """
+
+    # Check exit status and STDOUT
+    Then it should pass with:
+      """
+      very_kind
+      """
+
+
